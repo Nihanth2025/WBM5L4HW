@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>
+    <center>
+        <h1>JavaScript Error handling</h1>
+        <p id="error"></p>
+    </center>
+
+    <script>
+        try {       
+            var a = 5
+            var c = b - a;
+        }
+        catch(err) {
+            document.getElementById("error").innerHTML = err.message;
+        }
+    </script>
+</body>
+</html>
